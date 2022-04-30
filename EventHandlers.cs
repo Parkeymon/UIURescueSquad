@@ -100,8 +100,7 @@
 
                                 if (Enum.TryParse(item.Key, out ItemType parsedItem))
                                 {
-                                    Item item1 = new Item(parsedItem);
-                                    item1.Spawn(spawnPos, Random.rotation);
+                                    Item.Create(parsedItem).Spawn(spawnPos, Random.rotation);
                                 }
                                 else
                                 {
